@@ -1,0 +1,12 @@
+# Node modules
+frontend/node_modules/
+
+# Python virtual environment
+env/
+
+# Django specific
+*.pyc
+__pycache__/
+
+# Other
+*.log
