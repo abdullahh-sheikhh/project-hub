@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchTasks, updateTaskStatus } from '../api';
 import { Task } from '../types';
 
-const TasksScreen: React.FC = () => {
+const TaskScreen: React.FC = () => {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
 
@@ -33,12 +33,12 @@ const TasksScreen: React.FC = () => {
     };
 
     if (loading) return <p>Loading tasks...</p>;
-    if (!tasks || tasks.length < 1) return <p>No Record</p>;
+
     return (
         <div>
             <h2>Your Tasks</h2>
             <ul>
-                {tasks?.map((task) => (
+                {tasks.map((task) => (
                     <li key={task.id}>
                         {task.title} - {task.status}
                         <button
@@ -62,4 +62,4 @@ const TasksScreen: React.FC = () => {
     );
 };
 
-export default TasksScreen;
+export default TaskScreen;
