@@ -1,8 +1,8 @@
 import { Link, Route, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
-import TasksScreen from './components/tasks';
-import ProjectsScreen from './components/projects';
-import TaskScreen from './components/task';
+import TasksScreen from './screens/tasks';
+import ProjectsScreen from './screens/projects';
+import TaskScreen from './screens/task';
 
 function App() {
   return (
