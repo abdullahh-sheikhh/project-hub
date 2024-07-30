@@ -28,6 +28,31 @@
   color: #61dafb;
 }
 
+h2 {
+  @apply p-5 text-gray-800 text-2xl font-semibold
+}
+
+table {
+  @apply overflow-y-auto bg-slate-100 rounded-sm
+}
+
+thead {
+  @apply bg-slate-200
+}
+
+tr {
+  @apply hover:bg-slate-200
+}
+
+td {
+  @apply border p-2 border-slate-400 cursor-pointer
+}
+
+th {
+  @apply border p-2 border-slate-400 cursor-context-menu
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

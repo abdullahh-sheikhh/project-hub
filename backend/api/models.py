@@ -11,7 +11,7 @@ class Project(models.Model):
 class Task(models.Model):
     name = models.TextField(max_length=50)
     description = models.TextField(max_length=250)
-    status = models.TextField(max_length=10)
+    status = models.TextField(max_length=20)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     assigned_to = models.ForeignKey(User, on_delete=models.CASCADE)
     due_date = models.DateField()
